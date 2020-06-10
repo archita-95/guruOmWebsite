@@ -1486,8 +1486,8 @@ body{
   }
 .header{
   height:85vh;
-  background-image:-webkit-gradient(linear, left top, right bottom, from(rgba(83, 80, 80, 0.5)),to(rgba(184,219,51,0.5))), url(../images/logo.jpg);
-  background-image:linear-gradient(to right bottom, rgba(177, 114, 77, 0.5), rgba(219, 118, 51, 0.5)),url(../images/logo.jpg);
+ /* background-image:-webkit-gradient(linear, left top, right bottom, from(rgba(83, 80, 80, 0.5)),to(rgba(184,219,51,0.5))), url(../images/logo.jpg);
+  background-image:linear-gradient(to right bottom, rgba(177, 114, 77, 0.5), rgba(219, 118, 51, 0.5)),url(../images/logo.jpg); */
   background-size:cover;
   background-position:top;
   position:relative;
@@ -1806,6 +1806,15 @@ body{
 
 .mySlides {
   display:none;
- height: 40rem;
- width: 80rem;
+/* height: 40rem;
+ width: 80rem; */
+}
+
+.color-overlay{
+  width: 100%;
+  height: 100%;
+/*  background: rgb(rgba(219, 118, 51));*/
+  background-image:linear-gradient(to right bottom, rgba(217,108,104,85)), to(rgba(184,219,51,86));
+ 
+  opacity: 0.8;
 }
