@@ -1031,7 +1031,7 @@ body{
   transform:scale(0.95)
   }
 .feature-box{
-  background-color:rgba(255,255,255,0.8);
+  background-color:rgba(255, 255, 255, 1);
   font-size:1.5rem;
   padding:2.5rem;
   text-align:center;
@@ -1354,6 +1354,9 @@ body{
   -webkit-filter:blur(3px) brightness(80%);
   filter:blur(3px) brightness(80%)
   }
+
+/* FOOTER................. */
+
 .footer{
   background-color:#333;
   padding:10rem 0;
@@ -1367,16 +1370,17 @@ body{
   }
 .footer__logo-box{
   text-align:center;
-  margin-bottom:8rem
+  margin-bottom:8rem;
   }
 @media only screen and (max-width: 56.25em){
   .footer__logo-box{
     margin-bottom:6rem
+  
     }
   }
 .footer__logo{
   width:15rem;
-  height:auto
+  height:auto;
   }
 .footer__navigation{
   border-top:1px solid #777;
@@ -1484,6 +1488,9 @@ body{
 .row .col-3-of-4{
   width:calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem)
   }
+
+/*..................HEADER SECTION................ */
+
 .header{
   height:85vh;
  /* background-image:-webkit-gradient(linear, left top, right bottom, from(rgba(83, 80, 80, 0.5)),to(rgba(184,219,51,0.5))), url(../images/logo.jpg);
@@ -1513,8 +1520,8 @@ body{
   }
 .header__logo-box{
   position:absolute;
-  top:4rem;
-  left:4rem
+  top:1.5rem;
+  left:1.5rem
   }
 .header__logo{
   height:10rem
@@ -1527,6 +1534,27 @@ body{
   transform:translate(-50%, -50%);
   text-align:center
   }
+
+
+  .mySlides {
+    display:none;
+  /* height: 40rem;
+   width: 80rem; */
+  }
+  
+  .color-overlay{
+    width: 100%;
+    height: 100%;
+  /*  background: rgb(rgba(219, 118, 51));*/
+    background-image:linear-gradient(to right bottom, rgba(217,108,104,85)), to(rgba(184,219,51,86));
+   
+    opacity: 0.8;
+  }
+
+  
+
+/* ............................ NAV_BAR.................... */
+
 .navigation__checkbox{
   display: flex;
   }
@@ -1610,12 +1638,12 @@ body{
   display:inline-block;
   font-size:3rem;
   font-weight:300;
-  padding:1rem 2rem;
-  color:#fff;
+  padding:1rem 1rem;
+  color:#fff; 
   text-decoration:none;
   text-transform:uppercase;
-  background-image:linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size:220%;
+  background-image:linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%); 
+  background-size:250%;
   -webkit-transition:all .4s;
   transition:all .4s
   }
@@ -1678,6 +1706,9 @@ body{
   -webkit-transform:rotate(-135deg);
   transform:rotate(-135deg)
   }
+
+ /* .................... ABOUT SECTION........................ */
+
 .section-about{
   background-color:#f7f7f7;
   padding:25rem 0;
@@ -1688,6 +1719,9 @@ body{
     padding:20rem 0
     }
   }
+
+/* .......................PRODUCT SECTION.......................*/
+
 .section-features{
   padding:20rem 0;
   background-image:-webkit-gradient(linear, left top, right bottom, from(rgba(217,108,104,85)), to(rgba(184,219,51,86))),url(../images/masale.jpg);
@@ -1706,6 +1740,38 @@ body{
     padding:10rem 0
     }
   }
+
+  .product1{
+    background-image: url(../images/2.jpg);
+    height: 20rem;
+  }
+
+  .product2{
+    background-image: url(../images/green.jpeg);
+    height: 20rem;
+  }
+
+  .product3{
+    background-image: url(../images/greenchutney.jpg);
+    height: 20rem;
+  }
+
+  .product4{
+    background-image: url(../images/chutney.jpg);
+    height: 20rem;
+  }
+
+
+.product{
+  font-size: 8rem;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/* .............................UPCOMING PRODUCTS SECTION...........................*/
+
 .section-tours{
   background-color:#f7f7f7;
   padding:25rem 0 15rem 0;
@@ -1716,6 +1782,9 @@ body{
     padding:20rem 0 10rem 0
     }
   }
+
+/* ..............................DISTRIBUTOR SECTION................................*/
+
 .section-stories{
   position:relative;
   padding:15rem 0
@@ -1725,6 +1794,9 @@ body{
     padding:10rem 0
     }
   }
+
+/* .......................... CONTACT US SECTION................................*/
+
 .section-book{
   padding:15rem 0;
  /* background-image:-webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)); */
@@ -1769,34 +1841,6 @@ body{
   }
 
 
-
-  .product1{
-    background-image: url(../images/2.jpg);
-    height: 20rem;
-  }
-
-  .product2{
-    background-image: url(../images/green.jpeg);
-    height: 20rem;
-  }
-
-  .product3{
-    background-image: url(../images/greenchutney.jpg);
-    height: 20rem;
-  }
-
-  .product4{
-    background-image: url(../images/chutney.jpg);
-    height: 20rem;
-  }
-
-
-.product{
-  font-size: 8rem;
-  text-align: center;
-  color: #fff;
-}
-
 .contact{
   font-size: 8rem;
   text-align: center;
@@ -1804,17 +1848,25 @@ body{
 }
 
 
-.mySlides {
-  display:none;
-/* height: 40rem;
- width: 80rem; */
+.about-company {
+  i {
+    font-size: 25px;
+  }
+  a {
+    color: white;
+    transition: color 0.2s;
+    &:hover {
+      color: #4180cb;
+           }
+   }
+}
+.location {
+  i {
+    font-size: 18px;
+  }
+}
+.copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.color-overlay{
-  width: 100%;
-  height: 100%;
-/*  background: rgb(rgba(219, 118, 51));*/
-  background-image:linear-gradient(to right bottom, rgba(217,108,104,85)), to(rgba(184,219,51,86));
- 
-  opacity: 0.8;
-}
+
