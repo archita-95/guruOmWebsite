@@ -619,7 +619,7 @@ body{
     }
   }
 .heading-secondary{
-  font-size:3.5rem;
+  font-size:6rem;
   text-transform:uppercase;
   font-weight:700;
   display:inline-block;
@@ -1790,6 +1790,7 @@ body{
   padding:15rem 0;
   background-image: url(../images/background1.jpg);
   opacity: 0.9;
+
   }
 @media only screen and (max-width: 56.25em){
   .section-stories{
@@ -1800,8 +1801,11 @@ body{
 .distributor{
   color: black;
   font-size: 5rem;
+  z-index: 1;
+  background-color: rgba(243, 26, 26, 0.548);
 }
   
+
 
 /* .......................... CONTACT US SECTION................................*/
 
